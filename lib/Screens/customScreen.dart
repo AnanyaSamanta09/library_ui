@@ -23,7 +23,8 @@ class CustomScreen extends StatelessWidget {
             ),
             Text(cardlist[index].title,
               style: TextStyle(
-                fontWeight: FontWeight.bold
+                fontWeight: FontWeight.bold,
+                fontSize: 17
               ),
             ),
 
