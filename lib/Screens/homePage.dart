@@ -66,6 +66,10 @@ class HomePage extends StatelessWidget {
               ),
             ),
 
+            SizedBox(
+              height: displayHeight(context)*0.015,
+            ),
+
             Expanded(child: CustomScreen()),
           ],
         ),
