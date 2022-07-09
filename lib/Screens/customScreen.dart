@@ -10,7 +10,8 @@ class CustomScreen extends StatelessWidget {
     return GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
       crossAxisCount: 2,
       mainAxisSpacing: 8,
-      crossAxisSpacing: 6
+      crossAxisSpacing: 6,
+      childAspectRatio: 0.95
     ), itemBuilder:(BuildContext context, int index){
       return Card(
         child: Column(
@@ -26,9 +27,9 @@ class CustomScreen extends StatelessWidget {
               ),
             ),
 
-          // SizedBox(
-          //   height: displayHeight(context)*0.0,
-          // ),
+          SizedBox(
+            height: displayHeight(context)*0.01,
+          ),
 
           Text(cardlist[index].desc)
 
